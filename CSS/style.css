@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+}
+
+.Yes{
+    border: 2px solid;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.groupe-1{
+
+    /* width: 100%;  */
+    min-height: 25vh;
+    border: 2px solid;
+    background-color: fuchsia;
+    text-align: center;
+    
+}
+
+.groupe-2{
+    
+    /* width: 100%;  */
+    min-height: 25vh;
+    border: 2px solid;
+    background-color: aqua;
+    text-align: center;
+}
+
+.demi{
+    width: 50%;
+}
+
+.tiers{
+    width: 33.33%;
+}
+
+strong{
+    font-size: 30px;
+}
+
+
+/************MENU************/
+
+#menu{
+    background-color: greenyellow;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+#menu a {
+
+    color: lightseagreen;
+    text-decoration: none;
+    
+    
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    
+}
+
+#menu button{
+    width: 50px;
+    
+    display: none;
+
+}
+
+#menu button img{
+    width: 100%;
+}
+
+@media screen and (max-width:700px) {
+
+    #menu {
+        height: auto;
+    }
+
+    #menu ul {
+         display: none; 
+        flex-direction: column;
+        margin: 20px 0px;
+
+    }
+
+    #menu ul.visible{
+        display: flex;
+    }
+
+    #menu button{
+        display: block;
+    }
+
+    .container{
+      /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+
+    .seuil-700{
+        width: 100%;
+
+    }
+
+    .groupe-1,.groupe-2{
+        background-color: lightsalmon;
+        color: lightgreen;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .groupe-1,.groupe-2{
+        background-color: lightcyan;
+        color: red;
+    }
+
+    .seuil-500{
+        width: 100%;
+    }
+
+    
+}
